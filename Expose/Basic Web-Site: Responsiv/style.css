@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.jpg);
+    background-size:cover ;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 0 10%;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 0.5 solid white;
+}
+.navbar{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s all ease;
+}
+.navbar ul li a:hover{
+    color: #14aecd;
+    border-bottom: 0.5px solid #14aecd;
+}
+hr{
+    opacity: 0.5;
+}
+.menu-button{
+    background-color: rgba(45, 45, 45, 0.5);
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: #14aecd;
+    opacity: 0.7;
+}
+.menu-button:hover{
+    opacity: 1;
+}
+
+/* MAin */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 0;
+    gap: 30px;
+}
+.main p{
+    font-size: 50px;
+    font-weight: bold;
+}
+button{
+    width: 170px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+}
+/* Responsiv start  */
+    @media(max-width:576px){
+       .container{
+        padding: 0 2%;
+       }
+       .header{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: 0.5px solid #14aecd;
+        padding-bottom: 15px;
+       }
+       .navbar{
+        display: flex;
+        flex-direction: column;
+       }
+       .menu-button{
+        display: none;
+       }
+       .main{
+        padding: 10% 3%;
+       }
+       .main p{
+        font-size: 20px;
+        font-weight: bold;
+       }
+       .main span{
+        font-size: 15px;
+       }
+       .main .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        }
+        h1{
+            text-shadow: 0 3px 5px green;
+        }
+    }
+/* Responsiv end  */

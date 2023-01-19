@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* Header Section finish */
+.logo img{
+    width: 100px;
+    max-width: 100px;
+    z-index: 999;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.5s all ease;
+    z-index: 9999;
+}
+header:hover{
+    background-color: white;
+    color: black;
+}
+header:hover a{
+    color: black;
+}
+header:hover .nav-icons{
+    color: black;
+}
+
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+header ul li a{
+    color: white;
+    transition: 0.5s all ease;
+}
+.nav-icons{
+    display: flex;
+    gap: 20px;
+    color: white;
+} 
+.mega-menu{
+    position: absolute;
+    left: 25%;
+    top: 90px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+header ul li:hover .mega-menu{
+    display: block;
+    width: 100%;
+}
+.mega-menu ul li{
+    width: 100%;
+    margin-bottom: 7px;
+    display: block;
+}
+.mega-menu ul li a{
+    font-size: 16px;
+    color: black;
+}
+.mega-menu ul li i{
+    font-size: 12px;
+    opacity: 0;
+}
+.mega-menu ul li a:hover i{
+    opacity: 1;
+}
+
+
+/* Header Section finish */
+
+/* Content beginn */
+.content{
+    display: flex;
+    height: 100vh;
+    flex-wrap: nowrap;
+
+}
+.content .item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.8s all ease;
+}
+.content .item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.content .item:hover{
+    width: 200%;
+}
+.content .item .text{
+    position: absolute;
+    left:0;
+    bottom: -50px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px 100px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+.content .item .text:hover{
+    opacity: 1;
+    bottom: 0;
+}
+.content .item .text h3{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: white;
+}
+.content .item .text a{
+    font-size: 18px;
+    color: white;
+}
+.content .item .text a:hover{
+    border-bottom: 0.5px solid white;
+}
+
+.content .item .text a span{
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.7s all ease;
+}
+.content .item .text a:hover span{
+    transform: rotate(360deg);
+}
