@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(car.jpg);
+    background-size:cover ;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+.content{
+    height: 50%;
+    overflow: hidden;
+
+}
+.main{
+    margin: 5% 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+.form-group{
+    display: flex;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.form-group .form-title{
+    position: relative;
+    width: 220px;
+    margin: 15px auto;
+    box-shadow: 0 0 20px 9px #220d051a;
+    border-radius: 35px;
+}
+.form-group .form-title button{
+    position: relative;
+    padding: 10px 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #1c1c2e, #087fce);
+    border-radius: 35px;
+    transition: .5s;
+}
+
+.form-animation{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 3%;
+}
+.input-group-login a{
+    text-decoration: none;
+}
+.input-group-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin: 5% auto 10%;
+    font-size: 12px;
+    
+}
+.input-group-login .input-field{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    margin: 5px 5%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    outline: none;
+    background: transparent;
+}
+.multi-screen{
+    width: 80%;
+}
+.submit-btn{
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to right, #1c1c2e, #087fce);
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+}
+.submit-btn:hover{
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to right, #087fce, #1c1c2e);
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+    box-shadow: 2px 4px 4px #087fce ;
+}
